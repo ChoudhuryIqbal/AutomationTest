@@ -29,7 +29,7 @@
     <bytecodeTargetLevel>
       <module name="Automation" target="1.5" />
       <module name="Generic" target="1.5" />
-      <module name="Twitter" target="1.5" />
+      <module name="Twitter" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
