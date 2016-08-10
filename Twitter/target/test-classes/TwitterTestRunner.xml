@@ -4,6 +4,14 @@
 
 <suite name="Twitter running on Firefox" verbose="1" >
     <parameter name="url" value="https://twitter.com/"/>
+
+    <parameter name="usecloud" value="false"/>
+    <parameter name="userName" value=""/>
+    <parameter name="accessKey" value=""/>
+    <parameter name="os" value="Windows 10"/>
+    <parameter name="browserName" value="firefox"/>
+    <!--<parameter name="browserVersion" value="40"/>-->
+
     <test name="Log In" >
         <classes>
             <class name="credential.Login" />
