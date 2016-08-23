@@ -27,5 +27,9 @@
         <artifactId>testng</artifactId>
         <version>6.9.10</version>
     </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+    </dependency>
 </dependencies>
 </project>
