@@ -112,7 +112,13 @@ public class CommonAPI {
         list=driver.findElements(By.id(locator));
         return list;
     }
+public void clearInputField(String  locator){
+    driver.findElement(By.cssSelector(locator)).clear();
+}
 
+    public void sleepFor(int sec) throws InterruptedException{
+        Thread.sleep(sec*1000);
+    }
 
     public List<String> getListOfString (List<WebElement> list){
         List<String> items=new ArrayList<String>();

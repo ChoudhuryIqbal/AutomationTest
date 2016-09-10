@@ -32,7 +32,7 @@ public class DataReader {
         numberOfCol=sheet.getRow(0).getLastCellNum();
         data=new String[numberOfRows+1][numberOfCol+1];
 
-        for (int i=1;i<data.length;i++){
+        for (int i=0;i<data.length;i++){
 
 
             HSSFRow rows=sheet.getRow(i);
