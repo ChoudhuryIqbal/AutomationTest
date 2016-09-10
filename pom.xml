@@ -35,5 +35,43 @@
         <version>6.9.10</version>
     </dependency>
 </dependencies>
+
     </dependencyManagement>
+
+
+    <profiles>
+        <profile>
+            <id>
+                default
+            </id>
+            <activation>
+                <activeByDefault>
+                    true
+                </activeByDefault>
+
+            </activation>
+            <modules>
+                <module>
+                    Twitter
+                </module>
+                <module>
+                    Generic
+                </module>
+            </modules>
+
+        </profile>
+        <profile>
+            <id>
+                twitter
+            </id>
+            <modules>
+                <module>
+                    Generic
+                </module>
+                <module>
+                    Twitter
+                </module>
+            </modules>
+        </profile>
+    </profiles>
 </project>

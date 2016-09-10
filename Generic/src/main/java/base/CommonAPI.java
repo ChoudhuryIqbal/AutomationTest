@@ -67,7 +67,9 @@ public class CommonAPI {
 
     public WebDriver getLocalDriver(String browserName){
         if(browserName.equalsIgnoreCase("chrome")){
-            System.setProperty("webdriver.chrome.driver","Generic/browser-driver/chromedriver.exe");
+            //System.setProperty("webdriver.chrome.driver","Generic/browser-driver/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\browser-driver\\chromedriver.exe");
+
             driver=new ChromeDriver();
 
         }
