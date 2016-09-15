@@ -1,6 +1,7 @@
 package credential;
 
 import base.CommonAPI;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 /**
@@ -17,5 +18,10 @@ public class Login extends CommonAPI {
         Thread.sleep(2000);
         clickByXpath(".//*[@id='login-dialog-dialog']/div[2]/div[2]/div[2]/form/input[1]");
         Thread.sleep(3000);
+        //clicking moments
+       // clickByXpath(".//*[@id='global-actions']/li[2]/a/span[2]");
+
+        Thread.sleep(3000);
+
     }
 }
